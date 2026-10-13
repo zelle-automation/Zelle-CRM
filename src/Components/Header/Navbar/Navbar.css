@@ -1,0 +1,109 @@
+.NAVBAR_HEADER_MAIN_CONTAINER {
+  background-color: #050505;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar_Main_Content_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.Logo_Section_NAVBAR_COMP {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Logo_Section_NAVBAR_COMP img{
+    width: 150px;
+    height: auto;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: var(--theme-color-primary);
+}
+
+.Logo_Icon_NAVBAR_COMP {
+  color: #8b5cf6;
+  width: 24px;
+  height: 24px;
+}
+
+.Nav_Links_Container_NAVBAR_COMP {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #0f0f10;
+  padding: 4px;
+  border-radius: 50px;
+}
+
+.Nav_Indicator_NAVBAR_COMP {
+  position: absolute;
+  height: 36px;
+  background: #2e2e2e;
+  border-radius: 50px;
+  z-index: 1;
+   transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.Link_Item_NAVBAR_COMP {
+  position: relative;
+  padding: 10px 24px;
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.3s;
+}
+
+.Right_Actions_NAVBAR_COMP {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Action_Icon_NAVBAR_COMP {
+  color: #a1a1aa;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2c2c2c;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Avatar_Wrapper_NAVBAR_COMP {
+  width: 36px;
+  height: 36px;
+  background: #1e1e21;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Avatar_Icon_NAVBAR_COMP {
+  color: #fff;
+  width: 18px;
+  height: 18px;
+}
+
+
+.icons_Wrapper_NAVBAR_COMP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

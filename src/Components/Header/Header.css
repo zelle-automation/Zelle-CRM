@@ -1,0 +1,13 @@
+.HEADER_MAIN_CONTAINER {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ye line change karni hai */
+    align-items: center;
+}
+
+.Header_Content_Main{
+    width: 96%;
+}

@@ -1,0 +1,71 @@
+.Main_Container_HeaderFilter_COMP {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Content_Wrapper_HeaderFilter_COMP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.Filter_Group_HeaderFilter_COMP {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.Filter_Item_HeaderFilter_COMP {
+  background: #1e1e21;
+  color: #a1a1aa;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.Filter_Item_Active_HeaderFilter_COMP {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Dot_Purple_HeaderFilter_COMP { background: #8b5cf6; width: 8px; height: 8px; border-radius: 50%; }
+.Dot_Green_HeaderFilter_COMP { background: #10b981; width: 8px; height: 8px; border-radius: 50%; }
+.Dot_Orange_HeaderFilter_COMP { background: #f59e0b; width: 8px; height: 8px; border-radius: 50%; }
+.Dot_Blue_HeaderFilter_COMP { background: #3b82f6; width: 8px; height: 8px; border-radius: 50%; }
+.Dot_White_HeaderFilter_COMP { background: #ffffff; width: 8px; height: 8px; border-radius: 50%; }
+.Dot_Pink_HeaderFilter_COMP { background: #ec4899; width: 8px; height: 8px; border-radius: 50%; }
+
+.Actions_Group_HeaderFilter_COMP {
+  display: flex;
+  gap: 12px;
+  background: #1e1e21;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.Action_Icon_HeaderFilter_COMP {
+  color: #a1a1aa;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Action_Icon_HeaderFilter_COMP:hover {
+  color: #ffffff;
+}

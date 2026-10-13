@@ -1,0 +1,140 @@
+
+
+.calendar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.calendar-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.calendar-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  z-index: 999;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition-speed) cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 400px;
+  max-width: 90%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.calendar-popup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+.ClenderCloseBTN {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ClenderCloseBTN h2{
+    line-height: 0.2em;
+    font-weight: 300;
+}
+
+.CALENDER_POPUPCLOSE_VUTTON {
+  padding: 2px 2px;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--theme-color-secondary);
+  border: none;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CALENDER_POPUPCLOSE_VUTTON:hover {
+  background: var(--theme-color-secondary);
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+.react-calendar {
+  border: none !important;
+  width: 100% !important;
+  font-family: inherit;
+  background: transparent !important;
+}
+
+.react-calendar__navigation button {
+  color: var(--theme-color-secondary) !important;
+  font-weight: 700 !important;
+  font-size: 22px !important;
+  margin: 3px;
+  border-radius: 4px !important;
+  transition: background 0.2s;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 11px !important;
+  color: #888 !important;
+  margin-bottom: 10px;
+}
+
+.react-calendar__month-view__weekdays abbr {
+  text-decoration: none !important;
+}
+
+.react-calendar__month-view__days button {
+  padding: 17px 5px !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.react-calendar__month-view__days button:hover {
+  background-color: var(--theme-color-secondary) !important;
+  color: #ffffff !important;
+}
+
+.react-calendar__tile--active {
+  background-color: var(--theme-color-secondary) !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+}
+
+.react-calendar__year-view__months__month,
+.react-calendar__decade-view__years__year,
+.react-calendar__century-view__decades__decade {
+  border-radius: 10px !important;
+  padding: 15px !important;
+  transition: 0.2s;
+}
+
+.react-calendar__year-view__months__month:hover,
+.react-calendar__decade-view__years__year:hover,
+.react-calendar__century-view__decades__decade:hover {
+  background-color: var(--theme-color-secondary) !important;
+  color: #ffffff !important;
+}

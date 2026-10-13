@@ -1,0 +1,238 @@
+
+.ReservationTable_Main_Container {
+  padding: 20px;
+  color: var(--primary-color);
+  border-radius: 20px;
+  margin: 0;
+    background-color: var(--background);
+}
+
+.ReservationTable_Header_Section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ReservationTable_Title_Group h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.ReservationTable_Title_Group p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.ReservationTable_Date_Navigator {
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ReservationTable_ReserveComp {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.ReservationTable_Data_Table {
+  width: 100%;
+border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+.ReservationTable_Table_Header {
+  text-align: left;
+  padding: 15px;
+  color: #9b9b9b;
+  font-weight: 500;
+  background: #f9f9f9 ;
+}
+
+.ReservationTable_Table_Row {
+  border-bottom: 1px solid #f9f9f9;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.ReservationTable_Table_Row:hover{
+    background-color: #f9f9f9;
+    transition: 0.2s;
+}
+
+.ReservationTable_Table_Cell {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ReservationTable_Table_Cell:first-child{
+      border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.ReservationTable_Table_Cell:last-child{
+      border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: right;
+}
+.ReservationTable_Guest_Info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ReservationTable_Avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.ReservationTable_Status_Pill {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: var(--theme-color-secondary); color: var(--background); 
+}
+
+/* Status Pill Styles */
+.Status_Initiated {
+    background-color: #f3e5f5; 
+    color: #7e57c2; 
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.Status_InDevelopment {
+    background-color: #e3f2fd; 
+    color: #1976d2; 
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.Status_QATesting {
+    background-color: #fff8e1; 
+    color: #ff8f00; 
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.Status_Deployed {
+    background-color: #e8f5e9; 
+    color: #2e7d32; 
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.Status_Maintenance {
+    background-color: #f5f5f5; 
+    color: #616161; 
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.ReservationTable_Action_Btn {
+  background: none;
+  transform: rotate(-95deg);
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  padding: 8px 5px;
+  transition: 0.2s;
+}
+.ReservationTable_Table_Cell_BORDER{
+ border-radius: 15px;
+  border: 1px solid #ddd;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+   transition: 0.2s;
+}
+
+.ReservationTable_Table_Cell_BORDER:hover{
+    background-color: black;
+    color: white;
+     transition: 0.2s;
+     
+}
+
+.ReservationTable_Table_Cell_BORDER > .ReservationTable_Action_Btn:hover{
+ transition: 0.2s;
+    color: white;
+     transform: rotate(-45deg)
+}
+.ReservationTable_Table_Header:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.ReservationTable_Table_Header:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: right;
+}
+
+.ARROWICON_ReservationTable{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--foreground-2);
+padding: 2px 6px;
+border-radius: 6px;
+width: 20px;
+transition: 0.2s;
+cursor: pointer;
+}
+
+
+/* Avatar aur Text ko properly center karne ke liye */
+.ReservationTable_Avatar_Wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Avatar aur text ke beech space */
+}
+
+/* Avatar ka size fix rakhein */
+.ReservationTable_Avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Dashboard ke liye specific alignment tweaks */
+.Dashboard_Mode .ReservationTable_Table_Cell {
+    padding: 8px 12px; /* Dashboard par thoda compact padding */
+}
+
+.Dashboard_Mode .ReservationTable_Status_Pill {
+  font-size: 10px;
+}
+
+.Dashboard_Mode .ReservationTable_Action_Btn {
+  font-size: 17px;
+}
+
+.Dashboard_Mode  .ReservationTable_Table_Cell_BORDER{
+  width: 30px;
+  height: 30px;
+   border-radius: 10px;
+}

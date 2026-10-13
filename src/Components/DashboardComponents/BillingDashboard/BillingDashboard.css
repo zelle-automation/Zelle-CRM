@@ -1,0 +1,7 @@
+ 
+
+.Status_Complete { background: #e6fffa; color: #38b2ac; }
+.Status_Pending { background: #fffaf0; color: #d69e2e; }
+.Status_Overdue { background: #fff5f5; color: #e53e3e; }
+.Status_Paid{ background: #75a079; color: white; }
+.Status_Refunded { background: #ebf8ff; color: #3182ce; }

@@ -1,0 +1,171 @@
+/* PurchasedApplications.css */
+
+.Main_PurchasedApplications_DashboardInsightsRight {
+    background: var(--background);
+    border: 1px solid var(--foreground-2);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.Header_PurchasedApplications_DashboardInsightsRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header_PurchasedApplications_DashboardInsightsRight h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.SortBtn_PurchasedApplications {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--foreground-2);
+    background: transparent;
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.SortBtn_PurchasedApplications:hover {
+    background: #f9fafb;
+}
+
+.AppList_PurchasedApplications_DashboardInsightsRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     max-height: 400px;
+    overflow: scroll;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+.AppItemRow_PurchasedApplications {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--foreground-2);
+}
+
+.AppItemLeft_PurchasedApplications {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.AppLogo_PurchasedApplications {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.AppInfo_PurchasedApplications {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.AppMeta_PurchasedApplications {
+    font-size: 11px;
+    color: #888;
+}
+
+.AppInfo_PurchasedApplications strong {
+    font-size: 13px;
+    color: #333;
+}
+
+.AppSupportInfo_PurchasedApplications {
+    font-size: 11px;
+    color: #888;
+}
+
+.ItemSupportLabel {
+    color: #22c55e; /* Exact Green color for support */
+    font-weight: 500;
+}
+
+.AppItemRight_PurchasedApplications {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* Reusing your badge styles, only making them inline friendly */
+.StatusBadge_Resolved, .StatusBadge_Inprogress {
+    width: fit-content;
+}
+
+/* Button Styles based on Screenshot */
+.InstallThemeBtn_DashboardInsightsRight {
+    background: var(--theme-color-secondary);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.InstallThemeBtn_DashboardInsightsRight:hover {
+    filter: brightness(1.1);
+}
+
+.InstalledBtn_DashboardInsightsRight {
+    background: #1f2937; /* Very Dark gray/black for Installed */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.SupportLink_DashboardInsightsRight {
+    font-size: 11px;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.SupportLink_DashboardInsightsRight:hover {
+    color: var(--primary-color);
+}
+
+.Footer_PurchasedApplications_DashboardInsightsRight {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.Footer_PurchasedApplications_DashboardInsightsRight a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #666;
+    font-weight: 600;
+}

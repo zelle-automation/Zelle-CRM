@@ -1,0 +1,108 @@
+.DashboardGettingStarted_Middle {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+    width: 100% !important;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: center;
+}
+.DashboardGettingStarted_Middle_QuestionYear{
+    width: 100% !important;
+}
+
+.ProgressBarContainer_GettingStarted {
+  width: 90%;
+  padding: 24px;
+  background: var(--background);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--foreground-2);
+  box-shadow: 0 4px 20px rgba(0, 108, 207, 0.08); /* Subtle primary color shadow */
+}
+
+.ProgressHeader_GettingStarted {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.ProgressLabelGroup_GettingStarted {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ProgressTitle_GettingStarted {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--foreground);
+  letter-spacing: -0.5px;
+}
+
+.ProgressSubtitle_GettingStarted {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.ProgressBadge_GettingStarted {
+  background: #aa6e6128;
+  color: var(--theme-color-secondary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  border: 1px solid #aa6e6152;
+}
+
+.ProgressBase_GettingStarted {
+  width: 100%;
+  height: 12px;
+  background: var(--foreground-2);
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ProgressFill_GettingStarted {
+  height: 100%;
+  background: linear-gradient(90deg, var(--theme-color-secondary), #aa6e61);
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Glow effect moving across the bar */
+.ProgressGlow_GettingStarted {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: progress-shine 2s infinite;
+}
+
+@keyframes progress-shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.ProgressFill_GettingStarted::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    background: var(--background);
+    border-radius: 50%;
+    margin-right: 4px;
+    box-shadow: 0 0 10px var(--background);
+}

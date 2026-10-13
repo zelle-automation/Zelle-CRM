@@ -1,0 +1,59 @@
+.HeaderHeading_Main_Container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.HeaderHeading_Main_Content_Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.HeaderHeading_Main_Content_Container h2{
+    color: var(--heading-color-in-black);
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.button_Header_Heading_Primary{
+    background-color: var(--theme-color-secondary);
+    border: none;
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+
+.button_Header_Heading_Primary:hover{
+    background-color: #aa6e61;
+    transition: 0.2s;
+}
+
+.HEADR_HEADING_GODEVENING{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.HEADR_HEADING_GODEVENING p{
+    color: white;
+    line-height: 22px;
+    margin-top: -2px;
+}
+
+.HEADR_HEADING_GODEVENING h2{
+    margin: 0;
+}

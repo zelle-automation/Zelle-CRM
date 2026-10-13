@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --theme-color-primary:#006CCF;
+  --theme-color-secondary:#C27867;
+
+  --foreground: #000000;
+  --foreground-2: #E7E9EB;
+  --background: #ffffff;
+  --primary-color: #595959;
+  --heading-color-in-black: #F0F3F8;
+  --heading-color-in-white: #1d1e1f;
+  --official-color: #1b1b1d;
+  --gray-color: #2d2d2e;
+  --btn-color: #856CF5;
+  --btn-hover: #aa6e61;
+  --secondary-color: #f89217;
+  --hdg-size: 40px;
+  --hdg-size-lineheight: 2.5rem;
+  --val-size: 33px;
+  --subHdg-size: 18px;
+  --subHdg-lineheight: 1.5rem;
+  --paragh-size-lineheight: 1.5rem;
+  --paragh-size: 14px;
+  --btn-size: 0.92rem;
+  --iconstop-size: 22px;
+  --linear-bg: linear-gradient(220deg, #494949 15%, #000000 100%, #000000 35%);
+  --Dashboard-color-first: #332a64;
+    --transition-speed: 0.2s;
+  --buttons-icons-color: #5750a8;
+}
+
+body {
+    background: var(--linear-bg);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 14px;
+  }
+
+  ;
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;            
+  height: 8px;             
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-color-secondary); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  var(--theme-color-secondary);    
+  border-radius: 10px;
+  border: 2px solid var(--foreground-2);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-color-primary); 
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #bbbbbb var(--foreground-2);
+}
+
+.custom-scroll-container {
+  overflow-y: auto;
+  scrollbar-gutter: stable; 
+}

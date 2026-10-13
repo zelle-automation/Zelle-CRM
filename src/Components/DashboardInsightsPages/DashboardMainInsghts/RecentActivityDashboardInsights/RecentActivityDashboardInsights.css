@@ -1,0 +1,153 @@
+
+
+.Main_RecentActivity_DashboardInsights {
+    background: var(--background);
+    border: 1px solid var(--foreground-2);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.Header_RecentActivity_Dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title_RecentActivity_Dashboard {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.SortBtn_RecentActivity_Dashboard {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--foreground-2);
+    background: transparent;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.SortBtn_RecentActivity_Dashboard:hover {
+    background: #f9fafb;
+}
+
+.ActivityList_RecentActivity_Dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: scroll;
+    max-height: 400px;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.ActivityItem_RecentActivity_Dashboard {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--foreground-2);
+}
+
+.ActivityItem_RecentActivity_Dashboard:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.UserAvatar_RecentActivity_Dashboard {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Content_RecentActivity_Dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.HeaderInfo_RecentActivity_Dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.Name_RecentActivity_Dashboard {
+    font-size: 14px;
+    color: var(--foreground);
+}
+
+.Time_RecentActivity_Dashboard {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.Message_RecentActivity_Dashboard {
+    font-size: 13px;
+    color: #4b5563;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.Footer_RecentActivity_Dashboard {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    align-items: end;
+}
+
+.ViewAll_RecentActivity_Dashboard {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #666;
+    background: transparent;
+    transition: all 0.3s ease;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.ViewAllText_RecentActivity {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+.Viewmore_DashbaordInsights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    width: 0;           
+    opacity: 0;         
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ViewAll_RecentActivity_Dashboard:hover {
+    background-color: var(--theme-color-secondary);
+    color: white; 
+}
+
+.ViewAll_RecentActivity_Dashboard:hover .Viewmore_DashbaordInsights {
+    width: 18px;        
+    opacity: 1;         
+    margin-left: 8px;   
+}

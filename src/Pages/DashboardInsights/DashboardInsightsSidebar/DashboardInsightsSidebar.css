@@ -1,0 +1,103 @@
+._DashboardInsightsSidebar__Container {
+  padding: 0px;
+  width: 250px;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  overflow: hidden !important;
+}
+
+._DashboardInsightsSidebar__List {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+._DashboardInsightsSidebar__Item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+
+  color: var(--heading-color-in-white);
+}
+
+._DashboardInsightsSidebar__Item:hover {
+  background-color: var(--theme-color-secondary);
+  color: white;
+}
+
+._DashboardInsightsSidebar__Label {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+._DashboardInsightsSidebar__ItemRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-color);
+}
+
+._DashboardInsightsSidebar__Count {
+  font-size: 13px;
+}
+
+._DashboardInsightsSidebar__Icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._DashboardInsightsSidebar__BackWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translateX(-10px);
+  color: var( --theme-color-secondary);
+  padding: 5px 10px ;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin: 20px ;
+  background-color: var(--theme-color-secondary);
+  width: fit-content;
+  color: white;
+}
+
+._DashboardInsightsSidebar__BackWrapper svg{
+  transform: translateX(5px);
+}
+
+._DashboardInsightsSidebar__BackWrapper:hover {
+  background-color: var(--theme-color-secondary);
+  color: var(--background);
+  padding: 5px 15px 5px 5px !important;
+}
+
+._DashboardInsightsSidebar__BackText {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0;
+  width: 0;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+._DashboardInsightsSidebar__BackWrapper:hover ._DashboardInsightsSidebar__BackText {
+  opacity: 1;
+  width: 60px;
+}

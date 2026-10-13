@@ -1,0 +1,149 @@
+/* Dashboard.css */
+
+.dashboard-wrapper_ZELLECLIENT__DASHBOARD {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.top-section_ZELLECLIENT__DASHBOARD {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+.action-buttons_ZELLECLIENT__DASHBOARD {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.iconschecked_ZELLECLIENT_DASHBOARD {
+    font-size: 25px;
+}
+
+.action-btn_ZELLECLIENT__DASHBOARD {
+    padding: 20px 10px;
+    border-radius: 12px;
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.check-in_ZELLECLIENT__DASHBOARD {
+    background-color: var(--theme-color-secondary);
+    color: var(--background);
+    width: 145px;
+    transition: 0.3s;
+}
+
+.check-in_ZELLECLIENT__DASHBOARD:hover {
+    color: var(--background);
+    background-color: var(--btn-hover);
+     transition: 0.3s;
+}
+
+.stats-container_ZELLECLIENT__DASHBOARD {
+
+    gap: 15px;
+}
+
+.stat-card_ZELLECLIENT__DASHBOARD {
+    background: white;
+    padding: 20px 10px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.stat-card_ZELLECLIENT__DASHBOARD H4 {
+    font-size: 20px;
+}
+
+.stat-card_ZELLECLIENT__DASHBOARD p {
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+.cardstats_CARD_ZELLECLIENT {
+    gap: 10px;
+    font-weight: 800;
+    color: #1a1a1a !important;
+    font-size: 40px !important;
+}
+
+.stat-card_ZELLECLIENT__DASHBOARD_COLORPINK {
+    font-size: 10px;
+    background-color: var(--theme-color-secondary);
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--background) !important;
+    font-weight: 500;
+    transition: 0.3s;
+    border: 1px solid var(--theme-color-secondary);
+}
+
+.stat-card_ZELLECLIENT__DASHBOARD_COLORPINK:hover {
+    color: var(--theme-color-secondary) !important;
+    border: 1px solid var(--theme-color-secondary);
+    background-color: transparent;
+}
+
+.main-content_ZELLECLIENT__DASHBOARD {
+    display: flex;
+    gap: 20px;
+    width: 450px;
+}
+
+.left-panel_ZELLECLIENT__DASHBOARD {
+    flex: 2;
+    background: white;
+    border-radius: 12px;
+    max-height: 403px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.right-panel_ZELLECLIENT__DASHBOARD {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chart-card_ZELLECLIENT__DASHBOARD {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+        border-radius: 16px;
+    width: 350px;
+}
+
+.text-small {
+    font-size: 10px;
+}
+
+
+.Bottom_cards_zelleclients_Dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-left: 15px;
+    flex-direction: row;
+    margin-top: 30px;
+}

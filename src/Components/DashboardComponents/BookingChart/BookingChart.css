@@ -1,0 +1,95 @@
+
+.chart-header_ZELLECLIENT {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.title_ZELLECLIENT { margin: 0; font-size: 18px; color: #333; }
+.subtitle_ZELLECLIENT { margin: 5px 0 0; color: #888; font-size: 13px; }
+
+.dropdown_ZELLECLIENT {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #555;
+}
+
+.bar-container_ZELLECLIENT {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 160px;
+}
+.bar-item_ZELLECLIENT_BORDERssss{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    border-left: 2px solid var(--foreground-2);
+    height: 140px;
+}
+.bar-item_ZELLECLIENT {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 250px;
+    width: 30%;
+    /* border: 2px solid red; */
+}
+
+.bar-val_ZELLECLIENT {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+    margin-left: 10px;
+    color: var(--foreground);
+}
+
+.bar-fill_ZELLECLIENT {
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    position: relative;
+}
+
+/* Colors */
+.dark { background-color: #1a1a1a; }
+.pink { background-color: #ff3e8d; }
+
+/* Light/Striped Bar */
+.light {
+    background-color: #e0dcfc;
+    background-image: repeating-linear-gradient(
+        125deg,
+        #d1ccf8,
+        #d1ccf8 10px,
+        #e0dcfc 10px,
+        #e0dcfc 25px
+    );
+}
+
+.badge_ZELLECLIENT {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffebf3;
+    color: #ff3e8d;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.bar-label_ZELLECLIENT {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+    text-align: left;
+    margin-left: 10px;
+}

@@ -1,0 +1,92 @@
+.support-main-container_ZELLEONE__SUPPORT {
+  padding: 40px 60px;
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+.support-header-section_ZELLEONE__SUPPORT {
+  margin-bottom: 40px;
+}
+
+.support-title_ZELLEONE__SUPPORT {
+  font-size: 28px;
+  color: var(--foreground);
+  margin-bottom: 10px;
+}
+
+.support-subtitle_ZELLEONE__SUPPORT {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.support-grid_ZELLEONE__SUPPORT {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.support-card_ZELLEONE__SUPPORT {
+  background: #ffffff;
+  border: 1px solid var(--foreground-2);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.support-card_ZELLEONE__SUPPORT:hover {
+  border-color: var(--theme-color-secondary);
+}
+
+.icon-wrapper_ZELLEONE__SUPPORT {
+  font-size: 30px;
+  color: var(--theme-color-secondary);
+  margin-bottom: 20px;
+}
+
+.card-title_ZELLEONE__SUPPORT {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text_ZELLEONE__SUPPORT {
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.support-btn_ZELLEONE__SUPPORT {
+  background-color: var(--theme-color-secondary);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.faq-section_ZELLEONE__SUPPORT {
+  margin-top: 20px;
+}
+
+.faq-title_ZELLEONE__SUPPORT {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: var(--foreground);
+}
+
+.faq-item_ZELLEONE__SUPPORT {
+  background: var(--foreground-2);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}

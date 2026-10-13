@@ -1,0 +1,45 @@
+.MainContent_MainConatiner{
+    height: 96vh ;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.MainContent_MainContentheight_MainConatiner{
+    width: 98%;
+    height: 94vh;
+    background-color: var(--foreground-2);
+    border-radius: 20px;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+
+.MainContent_MainConatiner_Header{
+    background-color: var(--foreground);
+    margin: 20px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.MainContent_MainConatiner_Middle{
+    margin: 20px;
+    border-radius: 20px;
+    height: 70%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+
+.no-margin-class {
+  margin: 0 !important;
+height: 100vh !important;
+}
